@@ -15,8 +15,8 @@ int main()
 	auto_ptr<string> pwin;
 	pwin=film[2];
 	cout<<"The nominees for best avian baseball film are\n";
-	fot(int i=0;i<5;i++)
-	cout<<*films[i]<<endl;
+	for(int i=0;i<5;i++)
+		cout<<*films[i]<<endl;
 	cout<<"The winner is "<<*pwin<<"!\n";
 	cin.get();
 	return 0;
