@@ -8,14 +8,7 @@ struct CandyBar
 int main()
 {
 	using namespace std;
-	CandyBar snake;
-
-	cout<<"Enter the kind of candy: "
-	cin>>snake.kind;
-	cout<<"Enter the weight of candy: "
-	cin>>snake.weight;
-	cout<<"Enter the calories of this kindy: "
-	cin>>snake.calorie;
+	CandyBar snake={"Mocha Munch",2.3,350};
 	cout<<"Snake :\n";
 	cout<<snake.kind<<endl;
 	cout<<snake.weight<<endl;

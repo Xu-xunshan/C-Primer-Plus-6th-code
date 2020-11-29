@@ -10,11 +10,11 @@ int main()
 	using namespace std;
 	CandyBar snake;
 
-	cout<<"Enter the kind of candy: "
+	cout<<"Enter the kind of candy: ";
 	cin>>snake.kind;
-	cout<<"Enter the weight of candy: "
+	cout<<"Enter the weight of candy: ";
 	cin>>snake.weight;
-	cout<<"Enter the calories of this kindy: "
+	cout<<"Enter the calories of this kindy: ";
 	cin>>snake.calorie;
 	cout<<"Snake :\n";
 	cout<<snake.kind<<endl;

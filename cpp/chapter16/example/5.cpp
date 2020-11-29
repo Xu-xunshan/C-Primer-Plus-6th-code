@@ -1,28 +1,15 @@
 #include <iostream>
-#include <string>
-#include <memory>
-class Report
+struct CandyBar
 {
-	private:
-		std::string str;
-		public:Report(const std::string s):str(s)
-		{std::cout<<"Object created!\n";}
-		~Report(){std::cout<<"Object deleted!\n";}
-		void comment() const{std::cout<<str<<"\n";}
+	char kind;
+	double weight;
+	int calorie;
 };
 int main()
 {
-	{
-		std::auto_ptr<Report> ps (new Report("using auto_ptr"));
-		ps->comment();
-	}
-	{
-		std::shared_ptr<Report> ps (new Report("using shared_ptr"));
-		ps->comment();
-	}
-	{
-		std:unique_ptr<Report> ps(new Report("using unique_ptr"));
-		ps->comment();
-	}
-	return 0;
+	CandyBar snake={Mocha Munch;2.3;350};
+	cout<<"Snake :\n";
+	cout<<snake.kind<<endl;
+	cout<<snake.weight<<endl;
+	cout<<snake.calorie<<endl
 }
